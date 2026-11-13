@@ -1,0 +1,18 @@
+{
+  "domain": "smart_shopping",
+  "name": "Smart Shopping",
+  "codeowners": [
+    "@DerGnom1977"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "after_dependencies": [
+    "todo"
+  ],
+  "documentation": "https://github.com/DerGnom1977/ha-smart-shopping-integration",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/DerGnom1977/ha-smart-shopping-integration/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

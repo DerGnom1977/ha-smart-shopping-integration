@@ -1,0 +1,99 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Smart Shopping",
+        "description": "Angebote einsammeln, Einkaufslisten je Markt zählen und bei neuen Artikeln per Push melden.",
+        "data": {
+          "notify_person1": "Notify-Dienst Person 1",
+          "notify_person2": "Notify-Dienst Person 2",
+          "push_url": "Seite, die ein Tipp auf die Push-Meldung öffnet",
+          "liste_lidl": "To-do-Liste Lidl",
+          "liste_netto": "To-do-Liste Netto",
+          "liste_penny": "To-do-Liste Penny",
+          "liste_kaufland": "To-do-Liste Kaufland",
+          "liste_rewe": "To-do-Liste REWE"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Es ist nur eine Instanz erlaubt."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Smart Shopping",
+        "data": {
+          "notify_person1": "Notify-Dienst Person 1",
+          "notify_person2": "Notify-Dienst Person 2",
+          "push_url": "Seite, die ein Tipp auf die Push-Meldung öffnet",
+          "liste_lidl": "To-do-Liste Lidl",
+          "liste_netto": "To-do-Liste Netto",
+          "liste_penny": "To-do-Liste Penny",
+          "liste_kaufland": "To-do-Liste Kaufland",
+          "liste_rewe": "To-do-Liste REWE"
+        }
+      }
+    }
+  },
+  "services": {
+    "angebote_aktualisieren": {
+      "name": "Angebote aktualisieren",
+      "description": "Ruft die Angebotsquellen ab.",
+      "fields": {}
+    },
+    "angebot_speichern": {
+      "name": "Angebot speichern",
+      "description": "Trägt ein Angebot von Hand ein.",
+      "fields": {
+        "markt": {
+          "name": "Markt",
+          "description": "Lidl, Netto, Penny, Kaufland oder REWE."
+        },
+        "name": {
+          "name": "Produkt",
+          "description": "Name des Produkts."
+        },
+        "preis": {
+          "name": "Preis",
+          "description": "Angebotspreis in Euro."
+        },
+        "originalpreis": {
+          "name": "Originalpreis",
+          "description": "0 = unbekannt."
+        },
+        "gueltig_bis": {
+          "name": "Gültig bis",
+          "description": "Datum JJJJ-MM-TT."
+        },
+        "bild": {
+          "name": "Bild-URL",
+          "description": "Optional."
+        }
+      }
+    },
+    "artikel_hinzufuegen": {
+      "name": "Artikel hinzufügen",
+      "description": "Setzt einen Artikel auf die Liste (ohne Duplikate).",
+      "fields": {
+        "markt": {
+          "name": "Markt",
+          "description": "Lidl, Netto, Penny, Kaufland oder REWE."
+        },
+        "name": {
+          "name": "Produkt",
+          "description": "Name des Produkts."
+        },
+        "menge": {
+          "name": "Menge",
+          "description": "Anzahl."
+        },
+        "preis": {
+          "name": "Preis",
+          "description": "Optional."
+        }
+      }
+    }
+  }
+}

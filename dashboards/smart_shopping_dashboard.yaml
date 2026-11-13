@@ -1,0 +1,31 @@
+# Dashboard für Home Assistant: Einstellungen → Dashboards → Dashboard hinzufügen,
+# dann oben rechts ⋮ → Raw-Konfigurationseditor und diesen Inhalt einfügen.
+title: Smart Shopping
+views:
+- title: Smart Shopping
+  path: smart_shopping
+  icon: mdi:view-dashboard
+  cards:
+  - type: entities
+    title: Angebote
+    entities:
+    - sensor.smart_shopping_angebote
+    - button.smart_shopping_angebote_aktualisieren
+    - button.smart_shopping_abgelaufene_entfernen
+    - switch.smart_shopping_taeglich_aktualisieren
+  - type: entities
+    title: Offene Einkäufe
+    entities:
+    - sensor.smart_shopping_lidl_offen
+    - sensor.smart_shopping_netto_offen
+    - sensor.smart_shopping_penny_offen
+    - sensor.smart_shopping_kaufland_offen
+    - sensor.smart_shopping_rewe_offen
+    - sensor.smart_shopping_gesamt_offen
+  - type: entities
+    title: Push
+    entities:
+    - switch.smart_shopping_push_aktiv
+    - switch.smart_shopping_ziel_person1
+    - switch.smart_shopping_ziel_person2
+    - button.smart_shopping_standardwerte

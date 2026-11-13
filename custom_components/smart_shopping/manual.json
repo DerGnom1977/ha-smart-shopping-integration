@@ -1,0 +1,25 @@
+{
+  "offers": [
+    {
+      "store": "Lidl",
+      "name": "Butter 250 g (Beispiel)",
+      "price": 1.29,
+      "original_price": 1.79,
+      "valid_until": "2026-11-14"
+    },
+    {
+      "store": "REWE",
+      "name": "Kaffee gemahlen 500 g (Beispiel)",
+      "price": 3.99,
+      "original_price": 5.49,
+      "valid_until": "2026-11-14"
+    },
+    {
+      "store": "Netto",
+      "name": "Bio-Vollmilch 1 l (Beispiel)",
+      "price": 1.09,
+      "original_price": 1.29,
+      "valid_until": "2026-11-14"
+    }
+  ]
+}

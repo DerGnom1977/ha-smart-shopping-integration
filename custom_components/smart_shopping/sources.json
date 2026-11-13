@@ -1,0 +1,52 @@
+{
+  "_hinweis": "Automatische Quellen. Nur rechtlich zulässige Quellen eintragen (offizielle APIs/Feeds, Prospektdaten mit erlaubter Nutzung). Standardmäßig ist nichts aktiv; Angebote kommen dann aus manual.json.",
+  "sources": [
+    {
+      "id": "marktguru",
+      "store": "",
+      "type": "marktguru",
+      "enabled": false,
+      "_hinweis": "Inoffizielle Web-API von marktguru.de. Nutzungsbedingungen selbst prüfen. Zugangsschlüssel in marktguru_keys.json (apikey, clientkey), nicht hier eintragen.",
+      "zip_code": "12345",
+      "queries": [
+        "Butter",
+        "Milch",
+        "Kaffee"
+      ],
+      "retailers": {
+        "lidl": "Lidl",
+        "netto marken-discount": "Netto",
+        "penny": "Penny",
+        "kaufland": "Kaufland",
+        "rewe": "REWE"
+      },
+      "limit": 24
+    },
+    {
+      "id": "beispiel-lidl-feed",
+      "store": "Lidl",
+      "type": "json",
+      "enabled": false,
+      "url": "https://example.invalid/lidl-angebote.json",
+      "items_path": "offers",
+      "token_file": "",
+      "mapping": {
+        "name": "title",
+        "price": "price.current",
+        "original_price": "price.old",
+        "valid_from": "validity.from",
+        "valid_until": "validity.to",
+        "image": "image_url"
+      }
+    },
+    {
+      "id": "beispiel-lokale-datei",
+      "store": "REWE",
+      "type": "json",
+      "enabled": false,
+      "file": "/config/smart_shopping/rewe_export.json",
+      "items_path": "",
+      "mapping": {}
+    }
+  ]
+}

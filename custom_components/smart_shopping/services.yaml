@@ -1,0 +1,35 @@
+angebote_aktualisieren: {}
+angebot_speichern:
+  fields:
+    markt:
+      selector:
+        text: null
+    name:
+      selector:
+        text: null
+    preis:
+      selector:
+        text: null
+    originalpreis:
+      selector:
+        text: null
+    gueltig_bis:
+      selector:
+        text: null
+    bild:
+      selector:
+        text: null
+artikel_hinzufuegen:
+  fields:
+    markt:
+      selector:
+        text: null
+    name:
+      selector:
+        text: null
+    menge:
+      selector:
+        text: null
+    preis:
+      selector:
+        text: null
